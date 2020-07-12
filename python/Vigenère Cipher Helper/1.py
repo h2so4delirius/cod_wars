@@ -18,11 +18,9 @@ class VigenereCipher(object):
             num += 1
             if num == len(self.key):
                 num = 0
-            #print(num_res)
             if num_res == -1:
                 res += i
             else:
-                #print(num_res," ",i)
                 res += self.alphabet[num_res%len(self.alphabet)]
         return res
                 
@@ -42,11 +40,9 @@ class VigenereCipher(object):
             num += 1
             if num == len(self.key):
                 num = 0
-            #print(num_res)
             if num_res == -1:
                 res += i
             else:
-                #print(num_res," ",i)
                 res += self.alphabet[num_res%len(self.alphabet)]
         return res
 
